@@ -1,0 +1,107 @@
+/* ===== HEADER ===== */
+.header {
+    background-color: #1f2937;
+    padding-bottom: 80px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    padding: 16px 0;
+}
+
+.nav-link-group {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 24px;
+}
+
+.nav-link-group a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* ===== HERO ===== */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.title {
+    font-size: clamp(28px, 8vw, 52px);
+    line-height: 1.2;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.hero-text p {
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.hero-text button {
+    padding: 16px 48px;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero-text a {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    display: block;
+    border-radius: 16px;
+}
+
+/* ===== RWD ===== */
+@media screen and (min-width: 640px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-link-group {
+        padding-bottom: 0;
+    }
+
+    .hero-content {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    .hero-text {
+        flex: 1;
+        text-align: left;
+    }
+
+    .image-placeholder {
+        flex: 1;
+    }
+}
